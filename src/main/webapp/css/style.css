@@ -1,0 +1,106 @@
+/* ===========================
+   Voter Application - style.css
+   =========================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #f0f4f8;
+    color: #1a202c;
+    min-height: 100vh;
+}
+
+/* Hero */
+.hero {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a365d 0%, #2d6a4f 100%);
+    display: flex; align-items: center; justify-content: center;
+    text-align: center; color: white; padding: 2rem;
+}
+.hero-content .logo { font-size: 4rem; margin-bottom: 1rem; }
+.hero-content h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem; }
+.hero-content p  { font-size: 1.1rem; opacity: 0.85; margin-bottom: 2rem; }
+.btn-group { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+/* Container */
+.container {
+    max-width: 600px; margin: 2rem auto; padding: 1rem;
+}
+
+/* Card */
+.card {
+    background: white; border-radius: 16px; padding: 2rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+}
+.card h2 { font-size: 1.6rem; font-weight: 700; margin-bottom: 1.5rem; color: #1a365d; }
+
+/* Form */
+.form-group { margin-bottom: 1.2rem; }
+.form-group label { display: block; font-weight: 500; margin-bottom: 0.4rem; color: #4a5568; font-size: 0.9rem; }
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%; padding: 0.75rem 1rem; border: 2px solid #e2e8f0;
+    border-radius: 8px; font-size: 0.95rem; font-family: inherit;
+    transition: border-color 0.2s;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none; border-color: #2d6a4f;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block; padding: 0.75rem 2rem;
+    border-radius: 8px; font-weight: 600; font-family: inherit;
+    font-size: 0.95rem; text-decoration: none; cursor: pointer;
+    border: 2px solid transparent; transition: all 0.2s;
+}
+.btn-primary  { background: #2d6a4f; color: white; }
+.btn-primary:hover { background: #1a4a35; }
+.btn-outline  { background: transparent; color: white; border-color: white; }
+.btn-outline:hover { background: rgba(255,255,255,0.15); }
+.btn-block    { width: 100%; text-align: center; }
+.btn-sm       { padding: 0.4rem 1rem; font-size: 0.85rem; color: #2d6a4f; border-color: #2d6a4f; }
+
+/* Alerts */
+.alert { padding: 0.85rem 1rem; border-radius: 8px; margin-bottom: 1rem; font-size: 0.9rem; }
+.alert-error   { background: #fff5f5; color: #c53030; border: 1px solid #fed7d7; }
+.alert-success { background: #f0fff4; color: #276749; border: 1px solid #c6f6d5; }
+
+/* Candidate Cards */
+.candidate-list { display: flex; flex-direction: column; gap: 0.75rem; }
+.candidate-card {
+    display: flex; align-items: center; gap: 1rem;
+    border: 2px solid #e2e8f0; border-radius: 10px;
+    padding: 1rem; cursor: pointer; transition: all 0.2s;
+}
+.candidate-card:hover { border-color: #2d6a4f; background: #f0fff4; }
+.candidate-card input[type="radio"] { width: 18px; height: 18px; accent-color: #2d6a4f; }
+.candidate-info { display: flex; align-items: center; gap: 1rem; }
+.symbol { font-size: 1.8rem; }
+.candidate-info strong { display: block; font-weight: 600; }
+.candidate-info .party { font-size: 0.85rem; color: #718096; }
+
+/* Results */
+.results-table { margin-top: 1rem; }
+.result-header, .result-row {
+    display: grid; grid-template-columns: 50px 1fr 1fr 60px 60px;
+    padding: 0.75rem 0.5rem; font-size: 0.9rem; align-items: center;
+}
+.result-header { font-weight: 700; color: #4a5568; border-bottom: 2px solid #e2e8f0; }
+.result-row { border-bottom: 1px solid #f0f4f8; }
+.result-row.winner { background: #f0fff4; font-weight: 600; color: #276749; border-radius: 8px; }
+.progress-bar-wrap { background: #e2e8f0; border-radius: 100px; height: 6px; margin: 4px 0 8px; }
+.progress-bar { background: linear-gradient(90deg, #2d6a4f, #40916c); height: 100%; border-radius: 100px; transition: width 0.8s ease; }
+
+/* Misc */
+.header-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; }
+.text-center { text-align: center; }
+.mt { margin-top: 1.25rem; }
+footer { text-align: center; padding: 1.5rem; color: #718096; font-size: 0.85rem; }
+a { color: #2d6a4f; text-decoration: none; font-weight: 500; }
+a:hover { text-decoration: underline; }

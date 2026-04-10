@@ -1,0 +1,46 @@
+# ========================
+#  Voter Application
+#  .gitignore
+# ========================
+
+# Compiled Java classes
+*.class
+*.jar
+*.war
+*.ear
+
+# Eclipse
+.classpath
+.project
+.settings/
+bin/
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+
+# NetBeans
+nbproject/
+build/
+nbbuild/
+dist/
+nbdist/
+
+# Maven target
+target/
+
+# MySQL connector JAR (download separately)
+src/main/webapp/WEB-INF/lib/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment / config (never commit passwords!)
+# If you move credentials to a .properties file, ignore it:
+# src/main/resources/db.properties
