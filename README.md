@@ -183,25 +183,10 @@ index.jsp
 | candidate_id | INT FK | References candidates |
 | voted_at | TIMESTAMP | Time of vote |
 
----
-
-## 🔒 Security Notes
-
-> ⚠️ This is an educational project. For production use, consider:
-- Hashing passwords with **BCrypt** instead of plain text
-- Adding **CSRF protection** to forms
-- Implementing **input sanitization** to prevent SQL injection (use PreparedStatement — already done ✅)
-- Using **HTTPS** for secure data transmission
-
----
 
 ## 👨‍💻 Author
 
-**Your Name**
+Ashwinth K
 - GitHub: [@YOUR_USERNAME](https://github.com/YOUR_USERNAME)
 
----
 
-## 📄 License
-
-This project is open source and available under the [MIT License](LICENSE).
